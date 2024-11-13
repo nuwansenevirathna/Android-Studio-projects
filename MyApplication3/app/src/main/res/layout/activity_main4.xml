@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Icon -->
+
+    <!-- Dashboard Title -->
+
+    <!-- Next Session Section -->
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Profile"
+        android:src="@drawable/profileimge"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <!-- Image Placeholder -->
+
+    <!-- Essentials Section Title -->
+
+    <!-- Essentials Buttons in Grid -->
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/nextSessionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Session"
+        android:textColor="#7F7F7F"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/nextSessionDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nextSessionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun 27 Oct, 11:30 am\nData Science"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+
+    <ImageView
+        android:id="@+id/imagePlaceholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nextSessionDetails"
+        android:layout_width="175dp"
+        android:layout_height="169dp"
+        android:background="@drawable/dash"
+        android:contentDescription="Image Placeholder"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/essentialsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagePlaceholder"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:text="Essentials"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <Button
+        android:id="@+id/libraryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/essentialsTitle"
+        app:layout_constraintWidth_percent="0.48"
+        android:layout_width="166dp"
+        android:layout_height="93dp"
+        android:text="Library"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/myschButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/essentialsTitle"
+        app:layout_constraintWidth_percent="0.48"
+        android:layout_width="177dp"
+        android:layout_height="89dp"
+        android:text="MySch"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/learningHubButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/libraryButton"
+        app:layout_constraintWidth_percent="0.48"
+        android:layout_width="171dp"
+        android:layout_height="91dp"
+        android:text="Learning HUB"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <Button
+        android:id="@+id/chatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myschButton"
+        app:layout_constraintWidth_percent="0.48"
+        android:layout_width="174dp"
+        android:layout_height="88dp"
+        android:text="Chat"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
